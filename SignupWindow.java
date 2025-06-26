@@ -41,8 +41,8 @@ class SignupWindow extends JFrame{
 
  JTextField username_;
  JTextField email_;
-JTextField password_;
-JTextField confirm_;
+JPasswordField password_;
+JPasswordField confirm_;
 
 public static void main(String[] args){
 SignupWindow ob = new SignupWindow();
@@ -61,8 +61,8 @@ JLabel confirm = new JLabel("Confirm Password:"); confirm.setBounds(30,150,120,2
 
 username_ = new JTextField(); username_.setBounds(150,30,200,25); add(username_);
 email_ = new JTextField(); email_.setBounds(150,70,200,25); add(email_);
-password_ = new JTextField(); password_.setBounds(150,110,200,25); add(password_);
-confirm_ = new JTextField(); confirm_.setBounds(150,150,200,25); add(confirm_);
+password_ = new JPasswordField(); password_.setBounds(150,110,200,25); add(password_);
+confirm_ = new JPasswordField(); confirm_.setBounds(150,150,200,25); add(confirm_);
 
 JButton signup = new JButton("Sign up"); signup.setBounds(150,200,100,30); add(signup);
 signup.addActionListener(new eventHandler());
